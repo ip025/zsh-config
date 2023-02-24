@@ -97,8 +97,10 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias k='kubectl'
-
+alias k="kubectl"
+alias ctx="kubectl config use-context"
+export now="--force --grace-period=0"
+export yo="--dry-run=client -o yaml"
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
